@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import axios from "axios";
 
 export async function GET(req: NextRequest, res: NextResponse) {
-  const esp2Url = "http://esp2.local/turn-on-led"; // Get DNS of esp2 from environment variable
+  const esp2Url = "http://esp2.local/"; // Get DNS of esp2 from environment variable
 
   try {
     const response = await axios.get(`${esp2Url}/turn-on-led`); 
